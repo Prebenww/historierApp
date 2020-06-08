@@ -1,28 +1,34 @@
 {
   "expo": {
-    "name": "historierApp",
-    "slug": "historierApp",
+    "name": "Norske-Historier",
+    "slug": "Norske-Historier",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#171717"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 3000
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
+      "buildNumber": "1.0.0",
+      "bundleIdentifier": "no.studentproblemer1.historier",
       "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "no.studentproblemer1.historier",
+      "permissions": ["NOTIFICATIONS"]
     }
   }
 }
