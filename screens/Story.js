@@ -19,8 +19,8 @@ const LoginScreen = ({navigation}) => {
         <View style={styles.container}>
             <ScrollView style={styles.box}>
                 <View style={styles.innerBox}>
-                <Text style={{color: Colors.orangeColor}}>Min Breakup historie</Text>
-                <Text style={{color: Colors.orangeColor}}>
+                <Text style={{color: Colors.orangeColor, fontSize: 25}}>Min Breakup historie</Text>
+                <Text style={{color: Colors.orangeColor, fontSize: 25}}>
                     Denne fyren kjempet lenge og hardt for å bli sammen med meg. Han ønsket å være den som ville gjøre meg lykkelig. Vi ble til slutt sammen og alt føltes bare såå bra. Overalt hvor vi gikk la folk legge merke til hvor mye vi brydde oss om hverandre. Selv tilfeldige mennesker i heiser ville stoppe opp og fortelle oss hvor søte vi var sammen.
                     I 4 år var vi superlykkelig, ingen antydning til noe annet. Vi hadde en ganske stor krangel, men den gjorde oss bare sterkere. Helt siden starten av forholdet, uansett hva, så fikk jeg en god morgen eller god natt tekst, bilder, «hvordan har du det» meldinger, morsomme videoer og memes. Han ga meg full tilgang til telefon- og sosiale mediekontoer. Jeg ba ikke engang om noe passord, men han sa at han ikke hadde noe å skjule uansett.
                     Så etter 4 år var snudde alt. Plutselig hadde telefonen hans tastelås, og han forlot aldri telefonen sin lengre. Ikke et sekund engang. For første gang i forholdet følte jeg meg som dritt. Jeg spurte han om alt gikk bra for tiden, men han svarte bare «det går bra».

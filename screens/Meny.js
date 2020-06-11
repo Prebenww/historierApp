@@ -21,29 +21,29 @@ const LoginScreen = ({navigation}) => {
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate("Soon")}
+                    onPress={() => navigation.navigate("Story2")}
                 >
                     <View style={styles.container3}>
                         <View style={styles.caption}>
-                            <Text style={{color: Colors.orangeColor, fontSize: 20}}> 7 minutter i helvette</Text>
+                            <Text style={{color: Colors.orangeColor, fontSize: 20}}> Kleint på flyplassen </Text>
                         </View>
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate("Soon")}
+                    onPress={() => navigation.navigate("Story3")}
                 >
                     <View style={styles.container3}>
                         <View style={styles.caption}>
-                            <Text style={{color: Colors.orangeColor, fontSize: 20}}> Forbudte fantasier</Text>
+                            <Text style={{color: Colors.orangeColor, fontSize: 20}}> Forbudt forhold</Text>
                         </View>
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate("Soon")}
+                    onPress={() => navigation.navigate("Story4")}
                 >
                     <View style={styles.container3}>
                         <View style={styles.caption}>
-                            <Text style={{color: Colors.orangeColor, fontSize: 20}}> En brutal breakup</Text>
+                            <Text style={{color: Colors.orangeColor, fontSize: 20}}> Falsk kjærlighet </Text>
                         </View>
                     </View>
                 </TouchableOpacity>
