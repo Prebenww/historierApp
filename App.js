@@ -13,6 +13,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { DrawerContent } from "./components/DrawerContent"
 import StoryScreen4 from "./screens/Story4";
 import EmailScreen from "./screens/Email";
+import { AppearanceProvider } from 'react-native-appearance'
 
 
 const Drawer = createDrawerNavigator();
@@ -304,6 +305,7 @@ const SoonStackScreen = ({navigation}) => (
 export default function App() {
 
   return (
+      <AppearanceProvider>
       <NavigationContainer>
           <Drawer.Navigator initialRouteName="Home"  drawerStyle={{
               width: 250,
@@ -318,6 +320,7 @@ export default function App() {
               <Drawer.Screen name="Email" component={EmailStackScreen}/>
           </Drawer.Navigator>
       </NavigationContainer>
+      </AppearanceProvider>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import { Switch, StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
@@ -15,6 +15,9 @@ const LoginScreen = ({navigation}) => {
         style={styles.tinyLogo}
     />
         <View style={styles.container}>
+            <Switch>
+
+            </Switch>
             <ScrollView style={styles.box}>
 
                 <View style={styles.innerBox}>
