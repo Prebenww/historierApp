@@ -18,6 +18,7 @@ import {
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { AntDesign } from '@expo/vector-icons';
+import Colors from "../constants/Colors";
 
 
 export function DrawerContent(props) {
@@ -26,7 +27,7 @@ export function DrawerContent(props) {
 
 
     return(
-        <View style={{flex:1, backgroundColor: "#fe019a"}}>
+        <View style={{flex:1, backgroundColor: "#a9a9a9"}}>
             <DrawerContentScrollView {...props}>
                 <View style={styles.drawerContent}>
                     <View style={styles.userInfoSection}>
@@ -69,32 +70,6 @@ export function DrawerContent(props) {
                             label="Historier"
                             onPress={() => {props.navigation.navigate('Meny')}}
                         />
-
-
-                        <DrawerItem
-                            icon={({color, size}) => (
-                                <AntDesign
-                                    name="message1"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Chat"
-                            onPress={() => {props.navigation.navigate('Soon')}}
-                        />
-                        <DrawerItem
-                            icon={({color, size}) => (
-                                <Icon
-                                    name="account-check-outline"
-                                    color={color}
-                                    size={size}
-                                />
-                            )}
-                            label="Hjelp"
-                            onPress={() => {props.navigation.navigate('Soon')}}
-                        />
-
-
                     </Drawer.Section>
                 </View>
 
@@ -128,6 +103,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         marginTop: 3,
         fontWeight: 'bold',
+        color: Colors.orangeColor
     },
     caption: {
         fontSize: 14,
@@ -165,7 +141,7 @@ const styles = StyleSheet.create({
     },
     tinyLogo: {
         width: "100%",
-        height: "25%",
+        height: "30%",
         justifyContent: "center",
         alignItems: "center",
         marginBottom: 30,
