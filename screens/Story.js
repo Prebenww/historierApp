@@ -6,18 +6,17 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {Button, TextInput} from "react-native-paper"
 import Colors from "../constants/Colors"
 
+
 const LoginScreen = ({navigation}) => {
     return (
 
 <View style={{ backgroundColor: '#000000', flex: 1, justifyContent: "center", alignItems: "center"}}>
     <Image
         style={styles.tinyLogo}
-        source={{
-            uri: "https://images.unsplash.com/photo-1580571313472-5bd3de1d1ab8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-        }}
     />
         <View style={styles.container}>
             <ScrollView style={styles.box}>
+
                 <View style={styles.innerBox}>
                 <Text style={{color: Colors.orangeColor, fontSize: 25}}>Min Breakup historie</Text>
                 <Text style={{color: Colors.orangeColor, fontSize: 25}}>
@@ -37,7 +36,6 @@ const LoginScreen = ({navigation}) => {
                     Etter hvert fant vennen hans, som hadde crushet på jenta, ut at de to hadde en greie og det var et stort rot med mye drama. Både min familie, hans familie, fotball-laget, venner og jobben fikk vite om det. Etter alt dramaet fikk jeg en tilfeldig tekst fra ham som sa at han var deprimert. Alle vet om det som skjedde, og alle som han kjenner, hater ham nå. Han prøvde faktisk å begå selvmord.
                     En måned senere returnerte han endelig tingene mine fra rommet sitt. Sammen med den største blomsterbuketten jeg noensinne har sett og et brev hvor han beklaget.
                     Jeg kastet blomstene i søpla.
-
                 </Text>
                 </View>
             </ScrollView>

@@ -12,6 +12,7 @@ import StoryScreen3 from "./screens/Story3";
 import { Ionicons } from '@expo/vector-icons';
 import { DrawerContent } from "./components/DrawerContent"
 import StoryScreen4 from "./screens/Story4";
+import EmailScreen from "./screens/Email";
 
 
 const Drawer = createDrawerNavigator();
@@ -22,7 +23,36 @@ const MenyStack = createStackNavigator();
 const Story2Stack = createStackNavigator();
 const Story3Stack = createStackNavigator();
 const Story4Stack = createStackNavigator();
+const EmailStack = createStackNavigator();
 
+const EmailStackScreen = ({navigation}) => (
+    <EmailStack.Navigator  screenOptions={{
+        headerTitleStyle: {
+            fontSize: 22,
+        },
+
+        headerTitleAlign: 'center',
+        headerStyle: {
+            backgroundColor: '#000000',
+            shadowColor: 'transparent',
+        },
+        headerLeft: () => (
+            <Ionicons
+                name="ios-menu"
+                size={30}
+                color="#fe019a"
+                style={{paddingLeft: 25}}
+                onPress={() => {
+                    navigation.toggleDrawer()
+                }}/>
+        ),
+        title: "Velkommen",
+        titleSize: 15,
+        headerTintColor: '#fe019a'
+    }}>
+        <EmailStack.Screen name="Email" component={EmailScreen}/>
+    </EmailStack.Navigator>
+)
 const HomeStackScreen = ({navigation}) => (
     <HomeStack.Navigator  screenOptions={{
       headerTitleStyle: {
@@ -285,6 +315,7 @@ export default function App() {
               <Drawer.Screen name="Story2" component={Story2StackScreen}/>
               <Drawer.Screen name="Story3" component={Story3StackScreen}/>
               <Drawer.Screen name="Story4" component={Story4StackScreen}/>
+              <Drawer.Screen name="Email" component={EmailStackScreen}/>
           </Drawer.Navigator>
       </NavigationContainer>
   );

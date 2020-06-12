@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, StyleSheet, Image } from 'react-native';
+import { View, StyleSheet, Image,} from 'react-native';
+import email from 'react-native-email'
 import {
     useTheme,
     Avatar,
@@ -69,6 +70,17 @@ export function DrawerContent(props) {
                             )}
                             label="Historier"
                             onPress={() => {props.navigation.navigate('Meny')}}
+                        />
+                        <DrawerItem
+                            icon={({color, size}) => (
+                                <Icon
+                                    name="account-outline"
+                                    color={color}
+                                    size={size}
+                                />
+                            )}
+                            label="Send inn bidrag!"
+                            onPress={() => {props.navigation.navigate('Email')}}
                         />
                     </Drawer.Section>
                 </View>

@@ -22,6 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../backupHistorierApp/historierApp" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -47,7 +48,8 @@
       <workItem from="1591383671725" duration="7903000" />
       <workItem from="1591518889357" duration="7256000" />
       <workItem from="1591886652374" duration="4442000" />
-      <workItem from="1591921790405" duration="457000" />
+      <workItem from="1591921790405" duration="1056000" />
+      <workItem from="1591970059697" duration="5359000" />
     </task>
     <servers />
   </component>
@@ -55,6 +57,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="802" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591977826043">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="802" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1591977826043" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1591526432649">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -79,9 +85,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="816" y="198" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1591259694141" />
-    <state x="822" y="183" width="672" height="678" key="search.everywhere.popup" timestamp="1591902393585">
+    <state x="822" y="183" width="672" height="678" key="search.everywhere.popup" timestamp="1591972307148">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="822" y="183" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1591902393585" />
+    <state x="822" y="183" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1591972307148" />
   </component>
 </project>
