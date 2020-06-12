@@ -8,10 +8,7 @@ import Colors from "../constants/Colors"
 
 const image = { uri: "https://images.unsplash.com/photo-1580571313472-5bd3de1d1ab8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" };
 
-const urName = (name) => {
-    let navn;
 
-}
 
 const LoginScreen = ({navigation}) => {
     return (
@@ -35,11 +32,6 @@ const LoginScreen = ({navigation}) => {
             </Button>
             </View>
                 <View>
-                    <TextInput
-                        label='Ditt navn'
-                        value={name}
-                        onChangeText={urName}
-                    />
                 </View>
         </ImageBackground>
         </View>

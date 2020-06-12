@@ -13,8 +13,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { DrawerContent } from "./components/DrawerContent"
 import StoryScreen4 from "./screens/Story4";
 import EmailScreen from "./screens/Email";
-import { AppearanceProvider } from 'react-native-appearance'
-
+import GameScreen from "./screens/Game";
 
 const Drawer = createDrawerNavigator();
 const HomeStack = createStackNavigator();
@@ -25,6 +24,36 @@ const Story2Stack = createStackNavigator();
 const Story3Stack = createStackNavigator();
 const Story4Stack = createStackNavigator();
 const EmailStack = createStackNavigator();
+const GameStack = createStackNavigator();
+
+const GameStackScreen = ({navigation}) => (
+    <GameStack.Navigator  screenOptions={{
+        headerTitleStyle: {
+            fontSize: 22,
+        },
+
+        headerTitleAlign: 'center',
+        headerStyle: {
+            backgroundColor: '#000000',
+            shadowColor: 'transparent',
+        },
+        headerLeft: () => (
+            <Ionicons
+                name="ios-menu"
+                size={30}
+                color="#fe019a"
+                style={{paddingLeft: 25}}
+                onPress={() => {
+                    navigation.toggleDrawer()
+                }}/>
+        ),
+        title: "Velkommen",
+        titleSize: 15,
+        headerTintColor: '#fe019a'
+    }}>
+        <GameStack.Screen name="Game" component={GameScreen}/>
+    </GameStack.Navigator>
+)
 
 const EmailStackScreen = ({navigation}) => (
     <EmailStack.Navigator  screenOptions={{
@@ -259,8 +288,7 @@ const MenyStackScreen = ({navigation}) => (
         ),
         title: "Historier",
         titleSize: 15,
-        headerTintColor: '#fe019a' +
-            ''
+        headerTintColor: '#fe019a'
     }}>
         <MenyStack.Screen name="Meny" component={Meny}/>
     </MenyStack.Navigator>
@@ -305,7 +333,7 @@ const SoonStackScreen = ({navigation}) => (
 export default function App() {
 
   return (
-      <AppearanceProvider>
+
       <NavigationContainer>
           <Drawer.Navigator initialRouteName="Home"  drawerStyle={{
               width: 250,
@@ -318,9 +346,9 @@ export default function App() {
               <Drawer.Screen name="Story3" component={Story3StackScreen}/>
               <Drawer.Screen name="Story4" component={Story4StackScreen}/>
               <Drawer.Screen name="Email" component={EmailStackScreen}/>
+              <Drawer.Screen name="Game" component={GameStackScreen}/>
           </Drawer.Navigator>
       </NavigationContainer>
-      </AppearanceProvider>
   );
 }
 

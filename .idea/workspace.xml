@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backupHistorierApp/historierApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -49,7 +49,7 @@
       <workItem from="1591518889357" duration="7256000" />
       <workItem from="1591886652374" duration="4442000" />
       <workItem from="1591921790405" duration="1056000" />
-      <workItem from="1591970059697" duration="7590000" />
+      <workItem from="1591970059697" duration="15726000" />
     </task>
     <servers />
   </component>
@@ -81,10 +81,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="773" height="227" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1591208786367" />
-    <state x="816" y="198" key="run.anything.popup" timestamp="1591259694141">
+    <state x="816" y="198" width="672" height="677" key="run.anything.popup" timestamp="1591992183025">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="816" y="198" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1591259694141" />
+    <state x="816" y="198" width="672" height="677" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1591992183025" />
     <state x="822" y="183" width="672" height="678" key="search.everywhere.popup" timestamp="1591972307148">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

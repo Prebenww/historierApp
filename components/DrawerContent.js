@@ -82,6 +82,17 @@ export function DrawerContent(props) {
                             label="Send inn bidrag!"
                             onPress={() => {props.navigation.navigate('Email')}}
                         />
+                        <DrawerItem
+                            icon={({color, size}) => (
+                                <Icon
+                                    name="account-outline"
+                                    color={color}
+                                    size={size}
+                                />
+                            )}
+                            label="Drikkeleken!"
+                            onPress={() => {props.navigation.navigate('Game')}}
+                        />
                     </Drawer.Section>
                 </View>
 
