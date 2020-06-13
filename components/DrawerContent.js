@@ -40,8 +40,8 @@ export function DrawerContent(props) {
                                 size={50}
                             />
                             <View style={{marginLeft:15, flexDirection:'column'}}>
-                                <Title style={styles.title}>Norske Historier</Title>
-                                <Caption style={styles.caption}>Ekte breakup historier</Caption>
+                                <Title style={styles.title}>Breakup Appen</Title>
+                                <Caption style={styles.caption}>Norske historier og mer</Caption>
                             </View>
                         </View>
 
@@ -93,7 +93,19 @@ export function DrawerContent(props) {
                             label="Drikkeleken!"
                             onPress={() => {props.navigation.navigate('Game')}}
                         />
+                        <DrawerItem
+                            icon={({color, size}) => (
+                                <Icon
+                                    name="account-outline"
+                                    color={color}
+                                    size={size}
+                                />
+                            )}
+                            label="Flipp en mynt!"
+                            onPress={() => {props.navigation.navigate('Coin')}}
+                        />
                     </Drawer.Section>
+
                 </View>
 
 

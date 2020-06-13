@@ -17,12 +17,12 @@ const LoginScreen = ({navigation}) => {
             <ImageBackground source={image} style={styles.image}>
 
             <View style={styles.caption}>
-                <Text style={{color: Colors.orangeColor, fontSize: 20}}> Norske Breakup Historier</Text>
+                <Text style={{color: Colors.orangeColor, fontSize: 20}}> Den Norske Breakup-Appen</Text>
             </View>
             <View style={{paddingTop: 100, justifyContent: "center",
                 alignItems: "center", borderRadius: 25}}>
             <Button
-                style={{backgroundColor: "rgba(0, 0, 0, 0.7)", width: 200,  }}
+                style={{backgroundColor: "rgba(0, 0, 0, 0.7)", width: 200, paddingBottom: 10  }}
                 icon="login"
                 mode="text"
                 color={Colors.orangeColor}
@@ -30,6 +30,24 @@ const LoginScreen = ({navigation}) => {
             >
                 Gå til historier!
             </Button>
+                <Button
+                    style={{backgroundColor: "rgba(0, 0, 0, 0.7)", width: 200, paddingBottom: 10  }}
+                    icon="login"
+                    mode="text"
+                    color={Colors.orangeColor}
+                    onPress={() => navigation.navigate("Coin")}
+                >
+                    Gå til Flipp-Mynt!
+                </Button>
+                <Button
+                    style={{backgroundColor: "rgba(0, 0, 0, 0.7)", width: 200, paddingBottom: 10  }}
+                    icon="login"
+                    mode="text"
+                    color={Colors.orangeColor}
+                    onPress={() => navigation.navigate("Game")}
+                >
+                    Gå til Drikkelek!
+                </Button>
             </View>
                 <View>
                 </View>

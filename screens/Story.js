@@ -15,9 +15,6 @@ const LoginScreen = ({navigation}) => {
         style={styles.tinyLogo}
     />
         <View style={styles.container}>
-            <Switch>
-
-            </Switch>
             <ScrollView style={styles.box}>
 
                 <View style={styles.innerBox}>

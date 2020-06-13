@@ -12,7 +12,6 @@ const { width } = Dimensions.get('window')
 const GameScreen = ({navigation}) => {
 
 
-
     return (
         <View style={styles.container}>
             <View style={styles.navBar}>
@@ -26,6 +25,7 @@ const GameScreen = ({navigation}) => {
                 <View style={{ backgroundColor: Colors.orangeColor, flex: 1, width: width, justifyContent: "center", alignItems: "center" }}>
                     <Text style={{fontSize: 50}}>Jeg har aldri:</Text>
                     <Text style={{fontSize: 30}}>Ligget med eksen på fylla</Text>
+                    <Text style={{fontSize: 20}}>(Svipe for å bla -->)</Text>
                 </View>
                 <View style={{ backgroundColor: "white", flex: 1, width: width, justifyContent: "center", alignItems: "center" }}>
                     <Text style={{fontSize: 50}}>Jeg har aldri:</Text>

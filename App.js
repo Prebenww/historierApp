@@ -14,6 +14,7 @@ import { DrawerContent } from "./components/DrawerContent"
 import StoryScreen4 from "./screens/Story4";
 import EmailScreen from "./screens/Email";
 import GameScreen from "./screens/Game";
+import Coin from "./screens/Coin";
 
 const Drawer = createDrawerNavigator();
 const HomeStack = createStackNavigator();
@@ -25,6 +26,45 @@ const Story3Stack = createStackNavigator();
 const Story4Stack = createStackNavigator();
 const EmailStack = createStackNavigator();
 const GameStack = createStackNavigator();
+const CoinStack = createStackNavigator();
+
+const CoinStackScreen = ({navigation}) => (
+    <CoinStack.Navigator  screenOptions={{
+        headerTitleStyle: {
+            fontSize: 22,
+        },
+
+        headerTitleAlign: 'center',
+        headerStyle: {
+            backgroundColor: '#000000',
+            shadowColor: 'transparent',
+        },
+        headerLeft: () => (
+            <Ionicons
+                name="ios-menu"
+                size={30}
+                color="#fe019a"
+                style={{paddingLeft: 25}}
+                onPress={() => {
+                    navigation.toggleDrawer()
+                }}/>
+        ),
+        headerRight: () => (
+            <Ionicons
+                name="ios-arrow-round-back"
+                size={30}
+                color='#fe019a'
+                style={{paddingLeft: 25}}
+                onPress={() => navigation.goBack()}/>
+        ),
+        title: "Velkommen",
+        titleSize: 15,
+        headerTintColor: '#fe019a'
+    }}>
+        <CoinStack.Screen name="Coin" component={Coin}/>
+    </CoinStack.Navigator>
+)
+
 
 const GameStackScreen = ({navigation}) => (
     <GameStack.Navigator  screenOptions={{
@@ -46,6 +86,14 @@ const GameStackScreen = ({navigation}) => (
                 onPress={() => {
                     navigation.toggleDrawer()
                 }}/>
+        ),
+        headerRight: () => (
+            <Ionicons
+                name="ios-arrow-round-back"
+                size={30}
+                color='#fe019a'
+                style={{paddingLeft: 25}}
+                onPress={() => navigation.goBack()}/>
         ),
         title: "Velkommen",
         titleSize: 15,
@@ -76,6 +124,14 @@ const EmailStackScreen = ({navigation}) => (
                     navigation.toggleDrawer()
                 }}/>
         ),
+        headerRight: () => (
+            <Ionicons
+                name="ios-arrow-round-back"
+                size={30}
+                color='#fe019a'
+                style={{paddingLeft: 25}}
+                onPress={() => navigation.goBack()}/>
+        ),
         title: "Velkommen",
         titleSize: 15,
         headerTintColor: '#fe019a'
@@ -104,6 +160,7 @@ const HomeStackScreen = ({navigation}) => (
                 navigation.toggleDrawer()
               }}/>
       ),
+
       title: "Velkommen",
       titleSize: 15,
       headerTintColor: '#fe019a'
@@ -347,6 +404,7 @@ export default function App() {
               <Drawer.Screen name="Story4" component={Story4StackScreen}/>
               <Drawer.Screen name="Email" component={EmailStackScreen}/>
               <Drawer.Screen name="Game" component={GameStackScreen}/>
+              <Drawer.Screen name="Coin" component={CoinStackScreen}/>
           </Drawer.Navigator>
       </NavigationContainer>
   );
